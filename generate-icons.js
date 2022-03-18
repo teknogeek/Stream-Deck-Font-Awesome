@@ -79,10 +79,7 @@ if (ALL_ICONS) {
   }
 } else {
   if(!iconsMetadata.hasOwnProperty(symbol)) {
-    let errorMessage =
-      'Symbol not found. Results:' +
-      '\n' + Object.keys(searchMap).map(k => (`  - ${k}`)).join('\n');
-    console.error(errorMessage);
+    console.error('Symbol not found.');
   } else {
     let iconMeta = iconsMetadata[symbol];
     if (iconMeta.styles.find(s => s == style) === undefined) {
