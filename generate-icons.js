@@ -53,7 +53,7 @@ let iconsMetadata = yaml.load(fs.readFileSync(require.resolve('@fortawesome/font
 let ALL_ICONS = true;
 
 let backgroundColor = '#000';
-let iconColor = '#000';
+let iconColor = '#fff';
 
 // set ALL_ICONS = true, or...
 
