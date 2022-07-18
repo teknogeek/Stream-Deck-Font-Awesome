@@ -1,8 +1,11 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.1.0",
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "canvas": "^2.9.0",
     "js-yaml": "^4.1.0",
     "yargs": "^17.4.0"
+  },
+  "scripts": {
+    "build": "node generate-icons.js --all"
   }
 }
