@@ -12,8 +12,10 @@ jobs:
         run: |
           npm install
           npm run build --if-present
+      - name: Compress icons folder
+        run: zip -r streamdeck-fontawesome-256.zip streamdeck-fontawesome-256
       - name: Upload Icons
         uses: actions/upload-artifact@v3
         with:
-          name: streamdeck-fontawesome-256
-          path: streamdeck-fontawesome-256/
+          name: streamdeck-fontawesome-256.zip
+          path: streamdeck-fontawesome-256.zip
