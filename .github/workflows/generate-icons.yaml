@@ -3,7 +3,7 @@ name: Generate Icons
 on: [push]
 
 jobs:
-  build_and_test:
+  generate_icons:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -15,5 +15,5 @@ jobs:
       - name: Upload Icons
         uses: actions/upload-artifact@v3
         with:
-          name: streamdeck-fontawesome
-          path: streamdeck-fontawesome/
+          name: streamdeck-fontawesome-256
+          path: streamdeck-fontawesome-256/
