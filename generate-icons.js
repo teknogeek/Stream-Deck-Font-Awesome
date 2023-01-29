@@ -6,7 +6,7 @@ const { registerFont, createCanvas } = require('canvas');
 
 registerFont(require.resolve('@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf'), { family: 'Font Awesome 6 Regular' });
 registerFont(require.resolve('@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf'), { family: 'Font Awesome 6 Brands' });
-registerFont(require.resolve('@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf'), { family: 'Font Awesome 6 Heavy' });
+registerFont(require.resolve('@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf'), { family: 'Font Awesome 6 Free' });
 
 let iconsMetadata = yaml.load(fs.readFileSync(require.resolve('@fortawesome/fontawesome-free/metadata/icons.yml')));
 
@@ -163,17 +163,17 @@ function drawIcon(unicode, size, style, backgroundColor, iconColor) {
   ctx.textBaseline = 'middle';
   ctx.textAlign = 'center';
 
-  let fontFamily = 'Font Awesome 6 Free Solid';
+  let fontFamily = 'Font Awesome 6 Free';
   switch (style) {
     case 'regular':
-      fontFamily = 'Font Awesome 6 Free Regular';
+      fontFamily = 'Font Awesome 6 Regular';
       break;
     case 'brands':
-      fontFamily = 'Font Awesome 6 Brands Regular';
+      fontFamily = 'Font Awesome 6 Brands';
       break;
     case 'solid':
     default:
-      fontFamily = 'Font Awesome 6 Free Solid';
+      fontFamily = 'Font Awesome 6 Free';
       break;
   }
 
